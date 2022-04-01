@@ -1,0 +1,368 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-01T14:47:29.831Z",
+    "end": "2022-04-01T14:47:29.847Z",
+    "duration": 16,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43c97f65-7422-41da-8ca9-cf88d7f0ae78",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+          "title": "getArray",
+          "fullFile": "C:\\calculator_test\\calculator_test\\test\\getArray.spec.js",
+          "file": "\\test\\getArray.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"getArray\"",
+              "fullTitle": "getArray \"before each\" hook in \"getArray\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = new Lesson8();",
+              "err": {},
+              "uuid": "ec2bffcc-7239-4d7c-b334-4922166e83cd",
+              "parentUUID": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"getArray\"",
+              "fullTitle": "getArray \"after each\" hook in \"getArray\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = null;",
+              "err": {},
+              "uuid": "83490838-efdf-4c6b-9114-663877d6e8d4",
+              "parentUUID": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Array Length is 100",
+              "fullTitle": "getArray Array Length is 100",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let addRandomNum = calc.getArray()();\nexpect(addRandomNum).to.have.lengthOf(100);",
+              "err": {},
+              "uuid": "7e44e47e-e857-4250-8027-b8c42105b774",
+              "parentUUID": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Array is array",
+              "fullTitle": "getArray Array is array",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let addRandomNum = calc.getArray()();\nexpect(addRandomNum).to.be.a('array').that.includes(100).that.includes(1);",
+              "err": {},
+              "uuid": "e636b619-2aac-4221-99dd-1337227697c3",
+              "parentUUID": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Array has members from 1 to 100",
+              "fullTitle": "getArray Array has members from 1 to 100",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let addRandomNum = calc.getArray()();\nexpect(addRandomNum).to.have.members([40,  8, 53,  3, 14,  9,  1, 82, 61, 30, 29,  27,\n    35, 97, 32, 73, 88, 54, 55, 10, 64, 46, 58,  50,\n    79, 18, 72, 66, 20, 48, 94, 21, 43, 96, 45,  81,\n    49, 76, 16, 59, 36, 22, 47, 26, 98, 62, 87,  25,\n    77, 95, 89, 11, 85,  7, 28, 37, 74, 24, 86, 100,\n    15, 41,  5, 39, 52, 83, 78, 69, 92, 65, 19,  12,\n    51, 90, 33, 70, 34, 71, 60,  4, 23, 91, 80,  75,\n    63, 99,  2, 17,  6, 42, 56, 38, 67, 44, 84,  68,\n    31, 93, 57, 13]);",
+              "err": {},
+              "uuid": "3d803bfd-0464-4d09-8ab1-c8cf442cffd2",
+              "parentUUID": "cd81144e-ce01-42f5-81f1-cd75a104c2ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e44e47e-e857-4250-8027-b8c42105b774",
+            "e636b619-2aac-4221-99dd-1337227697c3",
+            "3d803bfd-0464-4d09-8ab1-c8cf442cffd2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bacfa6aa-52f4-451c-86ce-88c847f2ac0c",
+          "title": "getNumberOfcall",
+          "fullFile": "C:\\calculator_test\\calculator_test\\test\\getNumberOfCall.spec.js",
+          "file": "\\test\\getNumberOfCall.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"getNumberOfcall\"",
+              "fullTitle": "getNumberOfcall \"before each\" hook in \"getNumberOfcall\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = new Lesson8();",
+              "err": {},
+              "uuid": "abf3a65b-087c-4b94-91c5-af516b73d27f",
+              "parentUUID": "bacfa6aa-52f4-451c-86ce-88c847f2ac0c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"getNumberOfcall\"",
+              "fullTitle": "getNumberOfcall \"after each\" hook in \"getNumberOfcall\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = null;",
+              "err": {},
+              "uuid": "1d54bb42-87ee-400f-96a8-86b492b860d6",
+              "parentUUID": "bacfa6aa-52f4-451c-86ce-88c847f2ac0c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "getNumberOfCall returns 1 call",
+              "fullTitle": "getNumberOfcall getNumberOfCall returns 1 call",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calc.getNumberOfCall()()).to.be.equal(1);",
+              "err": {},
+              "uuid": "9d48c812-16f5-4618-9241-fc3271a25c03",
+              "parentUUID": "bacfa6aa-52f4-451c-86ce-88c847f2ac0c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "getNumberOfCall returns 3 calls",
+              "fullTitle": "getNumberOfcall getNumberOfCall returns 3 calls",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let getFunction = calc.getNumberOfCall();\nlet count1 = getFunction();\nlet count2 = getFunction();\nlet count3 = getFunction();\nexpect(count3).to.be.equal(3);",
+              "err": {},
+              "uuid": "9ad89c0f-9b05-4155-9c28-2c65dd24765a",
+              "parentUUID": "bacfa6aa-52f4-451c-86ce-88c847f2ac0c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d48c812-16f5-4618-9241-fc3271a25c03",
+            "9ad89c0f-9b05-4155-9c28-2c65dd24765a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "70ea8143-88cc-4b0e-86e9-d7c8a0421962",
+          "title": "sumOfNumbers",
+          "fullFile": "C:\\calculator_test\\calculator_test\\test\\sumOfNumbers.spec.js",
+          "file": "\\test\\sumOfNumbers.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"sumOfNumbers\"",
+              "fullTitle": "sumOfNumbers \"before each\" hook in \"sumOfNumbers\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = new Lesson8();",
+              "err": {},
+              "uuid": "b9996ccd-340d-44a0-b682-b3ba9a23f726",
+              "parentUUID": "70ea8143-88cc-4b0e-86e9-d7c8a0421962",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"sumOfNumbers\"",
+              "fullTitle": "sumOfNumbers \"after each\" hook in \"sumOfNumbers\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calc = null;",
+              "err": {},
+              "uuid": "f729ce17-39b8-4785-8d1d-e91db38e4dca",
+              "parentUUID": "70ea8143-88cc-4b0e-86e9-d7c8a0421962",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "More than 9 >> Summ of 93 = 3",
+              "fullTitle": "sumOfNumbers More than 9 >> Summ of 93 = 3",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let a = calc.sumOfNumbers(93);\nexpect(a).to.be.equal(3);",
+              "err": {},
+              "uuid": "7d6195dc-b488-4d5b-86ee-d1e149c278e8",
+              "parentUUID": "70ea8143-88cc-4b0e-86e9-d7c8a0421962",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Less than 9 >> Sum of 11 = 2",
+              "fullTitle": "sumOfNumbers Less than 9 >> Sum of 11 = 2",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let a = calc.sumOfNumbers(11);\nexpect(a).to.be.equal(2);",
+              "err": {},
+              "uuid": "a8e8f928-596f-4eca-87bf-871b6646f7c0",
+              "parentUUID": "70ea8143-88cc-4b0e-86e9-d7c8a0421962",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7d6195dc-b488-4d5b-86ee-d1e149c278e8",
+            "a8e8f928-596f-4eca-87bf-871b6646f7c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
